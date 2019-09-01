@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie&display=swap');
+
 /* Global */
 
 * {
@@ -228,20 +230,58 @@ svg{
 
 /* Our Story */
 .ourStory{
-    height: 100vh;
-    background: rgba(255, 255, 255, 0.9);
-    margin-top: 150px;
+    height: 80vh;
+    background: rgba(255, 255, 255, 0.4);
+    margin-top: 190px;
     margin-bottom: 150px;
     width: auto;
-    
+    position: relative;
 }
 
+.myPhoto{
+    height: 200px;
+    width:200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+    border: 10px solid white;
+    overflow: hidden;
 
 
+}
 
+.myPhoto img{
+    width: 200px;
+}
+.myQuote{
+    color: white;
+    position: relative;
+    top:120px;
+    height: 50px;
+    
+}
+.myQuote>p{
+    line-height: 50px;
+    background: rgba(240,112,144,0.7);
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Cookie', cursive;
+}
 
+.myMessage{
+    width:750px;
+    position: relative;
+    top:150px;
+    text-align: center;
+    left:50%;
+    transform: translateX(-50%);
+    color: #f07090;
+    font-weight:500;
+    font-size:17px;
+    line-height:25px;
 
-
+}
 
 
 
@@ -279,6 +319,7 @@ i {
     border-radius: 32px 32px 0 0;
     position: absolute;
     bottom: 0;
+    transition: 0.3s;
 }
 
 .footer-left span:hover {

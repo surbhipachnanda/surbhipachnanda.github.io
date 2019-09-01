@@ -61,7 +61,9 @@ a {
     text-align: right;
     padding-right: 25px;
 }
-
+input,textarea{
+    font-family: 'Quicksand', sans-serif;
+}
 .nav>a {
     text-decoration: none;
     color: #f17694;
@@ -143,6 +145,7 @@ a {
 
 }
 
+
 .customer-email {
     padding: 10px;
     background: rgba(255, 255, 255, 0.4);
@@ -173,11 +176,13 @@ a {
 input::placeholder {
     color: #f07090;
     font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 textarea::placeholder {
     color: #f07090;
     font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .submit-button {
@@ -188,6 +193,7 @@ textarea::placeholder {
     border-radius: 5px;
     color: white;
     z-index: 200;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .submit-button:hover {
