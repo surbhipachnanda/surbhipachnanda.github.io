@@ -1,0 +1,363 @@
+/* Global */
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+.fullpage {
+    background-image: url(../images/background.svg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+}
+
+html {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    font-size: 20px;
+}
+
+
+/* Landing */
+
+.landing {
+    width: 100%;
+    min-height: 600px;
+}
+
+.nav {
+    padding-top: 0.8em;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    padding-bottom: 0.5em;
+    padding-right: 8px;
+    position: fixed;
+    z-index: 5;
+}
+
+.title_img img {
+    width: 4em;
+}
+
+.pages {
+    float: right;
+    text-align: right;
+    padding-right: 25px;
+}
+
+.nav>a {
+    text-decoration: none;
+    color: #f17694;
+    margin-left: 25px;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 1.6em;
+    color: #00FFD0;
+    text-transform: uppercase;
+}
+
+.pages a {
+    text-decoration: none;
+    font-family: Quicksand;
+    color: #f17694;
+    margin-left: 25px;
+    vertical-align: middle;
+}
+
+.landingWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    height: 100%;
+}
+
+.landingContent {
+    height: 90%;
+    width: 100%;
+    padding: 300px;
+    padding-top: 0;
+}
+
+.contentTitle {
+    text-align: center;
+}
+
+.contentTitle h1 {
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Lobster Two',
+        cursive;
+    color: #f07090;
+    font-size: 70px;
+    padding: 70px;
+    padding-bottom: 0;
+    font-weight: normal;
+}
+
+
+
+.contentTitle img {
+    width: 200px;
+}
+
+.album-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: green;
+    margin-top: 20px;
+    height: 600px;
+}
+
+.album-container .next {
+    top: 50%;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    position: absolute;
+    background: rgb(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 50%;
+    z-index: 3;
+    text-align: center;
+    line-height: 50px;
+    padding-left: 2px;
+}
+
+.album-container .prev {
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    position: absolute;
+    background: rgb(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 50%;
+    z-index: 3;
+    text-align: center;
+    line-height: 50px;
+    padding-right: 2px;
+}
+
+.album {}
+
+.album-slider {
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 10px;
+    height: 500px;
+    text-align: center;
+}
+
+.album-slider img {
+    margin: 0px auto;
+    width: 1100px;
+    height: 500px;
+}
+
+.photo-description {
+    width: 1100px;
+    margin: 0px auto;
+    background: #f07090;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    font-weight: 400;
+}
+
+
+/* Footer */
+
+.footer {
+    color: white;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    padding: 0;
+}
+
+.footer-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    padding-left: 50px;
+    position: relative;
+}
+
+i {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.footer-left span {
+    background: #f17694;
+    padding: 6px;
+    padding-top: 10px;
+    border-radius: 32px 32px 0 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-left span:hover {
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+#span1 {
+    left: 20px;
+}
+
+#span2 {
+    left: 60px;
+}
+
+#span3 {
+    left: 100px;
+}
+
+.footer-right {
+    height: 100%;
+    width: 50%;
+    float: right;
+    text-align: right;
+    padding-right: 50px;
+    position: relative;
+}
+
+.footer-right span {
+    background: #f17694;
+    padding: 10px 20px 10px 20px;
+    border-radius: 32px 32px 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.container-all {
+    margin: 20px auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container {
+
+    width: calc(100% - 6px);
+    overflow: hidden;
+    height: fit-content;
+    margin: 3px;
+    padding: 0;
+    position: relative;
+
+
+}
+
+.container>img {
+
+    width: 100%;
+    transition-duration: .3s;
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border: 5px solid white;
+}
+
+.title {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 35%;
+    display: none;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.6em;
+    text-shadow: 1px 5px 10px black;
+    transition-duration: .3s;
+}
+
+.text {
+    position: absolute;
+    top: 70%;
+    cursor: pointer;
+    max-width: 80%;
+    text-align: center;
+    left: 50%;
+    text-shadow: 1px 5px 10px black;
+    font-size: 1.5em;
+    display: none;
+    margin-right: -50%;
+    transition-duration: .3s;
+    transform: translate(-50%, -50%)
+}
+
+.container:hover img {
+    transform: scale(1.2);
+    transition-duration: .3s;
+    filter: grayscale(50%);
+    opacity: .7;
+
+}
+
+.container:hover span {
+    color: white;
+    display: block;
+    transition-duration: .3s;
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        width: calc(50% - 6px);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+}

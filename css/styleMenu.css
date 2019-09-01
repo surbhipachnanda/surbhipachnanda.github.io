@@ -1,0 +1,364 @@
+/* Global */
+
+
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+.fullpage {
+    background-image: url(../images/background.svg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+}
+
+html {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    font-size: 20px;
+}
+
+
+/* Landing */
+
+.landing {
+    width: 100%;
+    min-height: 600px;
+}
+
+.nav {
+    padding-top: 0.8em;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    padding-bottom: 0.5em;
+    padding-right: 8px;
+    position: fixed;
+    z-index: 5;
+}
+
+.title_img img {
+    width: 4em;
+}
+
+.pages {
+    float: right;
+    text-align: right;
+    padding-right: 25px;
+}
+
+.nav>a {
+    text-decoration: none;
+    color: #f17694;
+    margin-left: 25px;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 1.6em;
+    color: #00FFD0;
+    text-transform: uppercase;
+}
+
+.pages a {
+    text-decoration: none;
+    font-family: Quicksand;
+    color: #f17694;
+    margin-left: 25px;
+    vertical-align: middle;
+}
+
+.landingWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    height: 100%;
+}
+
+.landingContent {
+    height: 90%;
+    width: 100%;
+    padding: 100px;
+    padding-top: 0;
+}
+
+.contentTitle {
+    text-align: center;
+}
+
+.contentTitle h1 {
+    /* font-family: 'Pacifico', cursive;
+     */
+    font-family: 'Lobster Two',
+        cursive;
+    font-weight: 300;
+    color: #f07090;
+    font-size: 70px;
+    padding: 70px;
+    padding-bottom: 0;
+}
+
+.contentTitle img {
+    width: 200px;
+}
+
+.menu {
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.menu-card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.menu-title {
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Lobster Two',
+        cursive;
+    padding: 5px;
+    height: 80px;
+    color: #f17091;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.menu-title img {
+    width: 40px;
+}
+
+.menu-items {
+    width: 90%;
+    height: 440px;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0px auto;
+    padding-top: 5px;
+}
+
+.menu-items1 {
+
+    width: 90%;
+    height: 440px;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0px auto;
+    padding-top: 5px;
+}
+
+.menu-card .next {
+    top: 50%;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    position: absolute;
+    background: rgb(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 50%;
+    z-index: 3;
+    text-align: center;
+    line-height: 50px;
+    padding-left: 2px;
+}
+
+.menu-card .prev {
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    position: absolute;
+    background: rgb(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 50%;
+    z-index: 3;
+    text-align: center;
+    line-height: 50px;
+    padding-right: 2px;
+}
+
+.prev:hover {
+    cursor: pointer;
+}
+
+.prev1:hover {
+    cursor: pointer;
+}
+
+.next:hover {
+    cursor: pointer;
+}
+
+.next1:hover {
+    cursor: pointer;
+}
+
+.menu-card .next1 {
+    top: 50%;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    position: absolute;
+    background: rgb(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 50%;
+    z-index: 3;
+    text-align: center;
+    line-height: 50px;
+    padding-left: 2px;
+}
+
+.menu-card .prev1 {
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    position: absolute;
+    background: rgb(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 50%;
+    z-index: 3;
+    text-align: center;
+    line-height: 50px;
+    padding-right: 2px;
+}
+
+.item {
+    width: 300px;
+    height: 430px;
+    margin: 10px;
+    margin-top: 0px;
+    background: white;
+    display: inline-block;
+    box-shadow: 7px 7px rgb(0, 0, 0, 0.08);
+    /* flex-direction: column; */
+}
+
+.item-img {
+    background-image: url("../images/food/cupcakes/cupcake1.jpg");
+    height: 300px;
+    margin: 10px;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    color: #f17694;
+    align-items: baseline;
+}
+
+.item-name {
+    height: 30px;
+    width: 75%;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.item-cost {
+    height: 30px;
+    width: 25%;
+    text-align: right;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.item-description {
+    width: 100%;
+}
+
+
+/* Footer */
+
+.footer {
+    color: white;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+.footer-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    padding-left: 50px;
+    position: relative;
+}
+
+i {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.footer-left span {
+    background: #f17694;
+    padding: 6px;
+    padding-top: 10px;
+    border-radius: 32px 32px 0 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-left span:hover {
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+#span1 {
+    left: 20px;
+}
+
+#span2 {
+    left: 60px;
+}
+
+#span3 {
+    left: 100px;
+}
+
+.footer-right {
+    height: 100%;
+    width: 50%;
+    float: right;
+    text-align: right;
+    padding-right: 50px;
+    position: relative;
+}
+
+.footer-right span {
+    background: #f17694;
+    padding: 10px 20px 10px 20px;
+    border-radius: 32px 32px 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
