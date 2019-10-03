@@ -1,3 +1,286 @@
+<<<<<<< HEAD
+/* Global */
+
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+.fullpage {
+    background-image: url(../images/background.svg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+}
+
+html {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    font-size: 20px;
+}
+
+
+/* Landing */
+
+.landing {
+    height: 120vh;
+    width: 100%;
+    min-height: 600px;
+}
+
+.nav {
+    padding-top: 0.8em;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    padding-bottom: 0.5em;
+    padding-right: 8px;
+    position: fixed;
+    z-index: 5;
+}
+
+.title_img img {
+    width: 4em;
+}
+
+.pages {
+    float: right;
+    text-align: right;
+    padding-right: 25px;
+}
+
+input,
+textarea {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav>a {
+    text-decoration: none;
+    color: #f17694;
+    margin-left: 25px;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 1.6em;
+    color: #00FFD0;
+    text-transform: uppercase;
+}
+
+.pages a {
+    text-decoration: none;
+    font-family: Quicksand;
+    color: #f17694;
+    margin-left: 25px;
+    vertical-align: middle;
+}
+
+.landingWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    height: 100%;
+}
+
+.landingContent {
+    height: 90%;
+    width: 100%;
+    padding: 300px;
+    padding-top: 0;
+}
+
+.menuBarLeft {
+    width: 50px;
+    height: 500px;
+    background: red;
+    float: left;
+    position: fixed;
+}
+
+.contentTitle {
+    text-align: center;
+}
+
+.contentTitle h1 {
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Lobster Two', cursive;
+    color: #f07090;
+    font-size: 70px;
+    padding: 70px;
+    padding-bottom: 0;
+    font-weight: normal;
+}
+
+.main-container {
+    margin-top: 13px;
+    color: #f17694;
+    font-size: 25px;
+    font-weight: 300;
+    height: 100%;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.contentTitle img {
+    width: 200px;
+}
+
+.form-container {
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.customer-details {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 10px;
+    width: 40%;
+    color: #b83657;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.customer-email {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 10px;
+    width: 88.5%;
+    color: #b83657;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.customer-order {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 10px;
+    width: 95%;
+    height: 200px;
+    color: #b83657;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.form-container>.fas {
+    color: #f07090;
+    width: 10px;
+    padding-right: 20px;
+}
+
+input::placeholder {
+    color: #f07090;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+textarea::placeholder {
+    color: #f07090;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.submit-button {
+    background-color: #f17694;
+    padding: 7px;
+    padding-left: 9px;
+    padding-right: 9px;
+    border-radius: 5px;
+    color: white;
+    z-index: 200;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+.footer {
+    color: white;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    padding: 0;
+}
+
+.footer-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    padding-left: 50px;
+    position: relative;
+}
+
+i {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.footer-left span {
+    background: #f17694;
+    padding: 6px;
+    padding-top: 10px;
+    border-radius: 32px 32px 0 0;
+    position: absolute;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.footer-left span:hover {
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+#span1 {
+    left: 20px;
+}
+
+#span2 {
+    left: 60px;
+}
+
+#span3 {
+    left: 100px;
+}
+
+.footer-right {
+    height: 100%;
+    width: 50%;
+    float: right;
+    text-align: right;
+    padding-right: 50px;
+    position: relative;
+}
+
+.footer-right span {
+    background: #f17694;
+    padding: 10px 20px 10px 20px;
+    border-radius: 32px 32px 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+=======
 /* Global */
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
 
@@ -270,4 +553,5 @@ i {
     position: absolute;
     bottom: 0;
     right: 20px;
+>>>>>>> fbdb27925c178e4cdf43cf43359f0ec0d0c43ec0
 }
